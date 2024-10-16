@@ -1,0 +1,58 @@
+#main-header {
+    background-color: #121212;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 30px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.red {
+    color: #ff0000;
+}
+
+#main-header nav {
+    display: flex;
+    gap: 20px;
+}
+
+#main-header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+#main-header nav a:hover {
+    color: #ff0000;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #main-header nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}

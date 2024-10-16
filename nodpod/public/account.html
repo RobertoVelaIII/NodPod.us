@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - NodPod | Innovative Tactical Gear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo">
+            <a href="index.html">[<span class="white">nod</span><span class="red">pod.us]</span></a>
+        </div>
+        <nav>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="account.html">My account</a>
+            <a href="dealers.html">Authorized dealers</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="hamburger-menu">☰</div>
+    </header>
+
+    <main class="account-container">
+        <h1>My account</h1>
+        <div class="account-content">
+            <div class="login-section">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="username">Username or email address *</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password *</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Log in</button>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <a href="#" class="lost-password">Lost your password?</a>
+                </form>
+            </div>
+            <div class="register-section">
+                <h2>Register</h2>
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="email">Email address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <p class="form-info">A link to set a new password will be sent to your email address.</p>
+                    <p class="form-info">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="privacy.html">privacy policy</a>.</p>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="newsletter-signup">
+            <label for="email-input">Enter your email</label>
+            <div class="input-group">
+                <input type="email" id="email-input" placeholder="Enter your email" required>
+                <button type="submit">Stay Updated</button>
+            </div>
+        </div>
+        <nav aria-label="Footer Navigation">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </nav>
+        <p>&copy; 2024 NodPod. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/account.js"></script>
+</body>
+</html>

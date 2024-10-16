@@ -1,0 +1,294 @@
+/* Header styles */
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #121212;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo .white {
+    color: #ffffff;
+}
+
+.logo .red {
+    color: #ff0000;
+}
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff0000;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Responsive styles for the header */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Styles for mobile menu (you'll need to implement the toggle functionality with JavaScript) */
+    nav.mobile-menu-active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #121212;
+        padding: 1rem;
+    }
+}
+
+/* Hero video styles */
+.hero-video {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.hero-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover;
+}
+
+/* Sound toggle button styles */
+.sound-toggle {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sound-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Shop header styles */
+.shop-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem 0;
+    background-color: #121212;
+}
+
+.shop-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: lowercase;
+}
+
+.shop-header h1 .white {
+    color: #ffffff;
+}
+
+.shop-header h1 .red {
+    color: #ff0000;
+}
+
+.shop-header .subtitle {
+    font-size: 1.2rem;
+    color: #888888;
+    margin-bottom: 1.5rem;
+}
+
+.shop-results {
+    font-size: 1rem;
+    color: #888888;
+    margin-bottom: 1rem;
+}
+
+/* Shop controls styles */
+.shop-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-controls label {
+    margin-right: 0.5rem;
+    color: #ffffff;
+}
+
+#product-sorting {
+    padding: 0.5rem 1rem;
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 4px;
+}
+
+/* Product grid styles */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Product card styles */
+.product-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.product-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-card .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-options,
+.add-to-cart {
+    width: 48%;
+    padding: 0.75rem 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.select-options {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.add-to-cart {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.select-options:hover,
+.add-to-cart:hover {
+    opacity: 0.9;
+}
+
+/* Footer styles */
+#main-footer {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.social-icons {
+    margin-bottom: 1rem;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+.newsletter-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.newsletter-signup label {
+    margin-bottom: 0.5rem;
+}
+
+.input-group {
+    display: flex;
+}
+
+.input-group input[type="email"] {
+    padding: 0.5rem;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 200px;
+}
+
+.input-group button {
+    padding: 0.5rem 1rem;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+}
+
+#main-footer nav {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#main-footer nav a {
+    color: #ffffff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+#main-footer p {
+    font-size: 0.9rem;
+}

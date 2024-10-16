@@ -1,0 +1,12 @@
+﻿{
+  "name": "nodpod-website",
+  "version": "1.0.0",
+  "description": "NodPod Website",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

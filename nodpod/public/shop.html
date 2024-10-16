@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - NodPod | Innovative Tactical Gear</title>
+    <meta name="description" content="Explore NodPod's range of innovative tactical gear. Find the perfect equipment for your needs.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/shop.css">
+    <link rel="stylesheet" href="components/header/header.css">
+    <link rel="stylesheet" href="components/footer/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="logo">
+            <a href="index.html">[<span class="white">nod</span><span class="red">pod.us]</span></a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="account.html">My account</a>
+            <a href="dealers.html">Authorized dealers</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="hamburger-menu">☰</div>
+    </header>
+
+    <main>
+        <div class="hero-video">
+            <video id="hero-video" loop muted playsinline>
+                <source src="assets/images/project/init-video.MP4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button id="sound-toggle" class="sound-toggle">
+                <i class="fas fa-volume-mute"></i>
+            </button>
+        </div>
+
+        <div class="shop-header">
+            <h1><span class="white">[nod</span><span class="red">pod.us]</span></h1>
+            <p class="subtitle">Innovative Tactical Gear for Modern Warriors</p>
+            <p class="shop-results">Showing all 4 results</p>
+            <div class="shop-controls">
+                <label for="product-sorting">Sort Products:</label>
+                <select name="product-sorting" id="product-sorting">
+                    <option value="default">Default sorting</option>
+                    <option value="popularity">Sort by popularity</option>
+                    <option value="rating">Sort by average rating</option>
+                    <option value="latest">Sort by latest</option>
+                    <option value="price-asc">Sort by price: low to high</option>
+                    <option value="price-desc">Sort by price: high to low</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="product-grid">
+            <article class="product-card">
+                <h2>NodPod V1</h2>
+                <img src="assets/images/project/nodpod_image_010.jpg" alt="NodPod V1 - Tactical gear with green lighting" width="300" height="300" loading="lazy">
+                <p class="price">$99.99</p>
+                <div class="button-container">
+                    <button class="select-options">Select Options</button>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <h2>NodPod V2</h2>
+                <img src="assets/images/project/nodpod_image_008.jpg" alt="NodPod V2 - Tactical skull with red beret" width="300" height="300" loading="lazy">
+                <p class="price">$109.99</p>
+                <div class="button-container">
+                    <button class="select-options">Select Options</button>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <h2>NodPod V3</h2>
+                <img src="assets/images/project/nodpod_image_003.jpg" alt="NodPod V3 - Two tactical skull mounts with night vision" width="300" height="300" loading="lazy">
+                <p class="price">$119.99</p>
+                <div class="button-container">
+                    <button class="select-options">Select Options</button>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <h2>NodPod V4</h2>
+                <img src="assets/images/project/nodpod_image_005.jpg" alt="NodPod V4 - Multiple skull mounts on display" width="300" height="300" loading="lazy">
+                <p class="price">$129.99</p>
+                <div class="button-container">
+                    <button class="select-options">Select Options</button>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="newsletter-signup">
+            <label for="email-input">Enter your email</label>
+            <div class="input-group">
+                <input type="email" id="email-input" placeholder="Enter your email" required>
+                <button type="submit">Stay Updated</button>
+            </div>
+        </div>
+        <nav aria-label="Footer Navigation">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </nav>
+        <p>&copy; 2024 NodPod. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/shop.js"></script>
+</body>
+</html>

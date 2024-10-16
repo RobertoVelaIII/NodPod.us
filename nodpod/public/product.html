@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodPod Product</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .hero {
+            position: relative;
+            padding: 20px;
+        }
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+        }
+        .carousel img {
+            width: 100%;
+            height: auto;
+            scroll-snap-align: center;
+            transition: transform 0.3s ease;
+        }
+        .carousel img:hover {
+            transform: scale(1.05);
+        }
+        .add-to-cart {
+            position: sticky;
+            top: 10px;
+            background-color: #d32f2f;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .add-to-cart:hover {
+            background-color: #b71c1c;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .product-info {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .reviews, .specs {
+            flex: 1;
+            margin: 10px;
+        }
+        .related-products {
+            padding: 20px;
+        }
+        .related-item {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+        .related-item:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: #1e1e1e;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #d32f2f;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <a href="index.html">[<span class="white">nod</span><span class="red">pod.us]</span></a>
+    </div>
+    <section class="hero">
+        <div class="carousel">
+            <img src="assets/images/project/nodpod_image_001.jpg" alt="Product Image 1">
+            <img src="assets/images/project/nodpod_image_002.jpg" alt="Product Image 2">
+            <img src="assets/images/project/nodpod_image_003.jpg" alt="Product Image 3">
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+        <h1>Product Name</h1>
+        <h2>$99.99</h2>
+        <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+        </ul>
+    </section>
+
+    <section class="product-info">
+        <div class="reviews">
+            <h3>Customer Reviews</h3>
+            <p>★★★★☆</p>
+            <p>"Great product!"</p>
+        </div>
+        <div class="specs">
+            <h3>Specifications</h3>
+            <ul>
+                <li>Spec 1</li>
+                <li>Spec 2</li>
+                <li>Spec 3</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="related-products">
+        <h3>Related Products</h3>
+        <div class="related-item">
+            <img src="assets/images/project/nodpod_image_004.jpg" alt="Related Product 1">
+            <p>Product 1 - $49.99</p>
+        </div>
+        <div class="related-item">
+            <img src="assets/images/project/nodpod_image_005.jpg" alt="Related Product 2">
+            <p>Product 2 - $59.99</p>
+        </div>
+        <div class="related-item">
+            <img src="assets/images/project/nodpod_image_006.jpg" alt="Related Product 3">
+            <p>Product 3 - $69.99</p>
+        </div>
+        <button onclick="window.location.href='shop.html'">View All Products</button>
+    </section>
+
+    <footer class="footer">
+        <p>Trusted by Tactical Enthusiasts Worldwide</p>
+        <div class="newsletter">
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+        <div>
+            <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script>
+        // Add JavaScript for image zoom, carousel, and animations here
+    </script>
+</body>
+</html>

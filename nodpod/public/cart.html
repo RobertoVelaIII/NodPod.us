@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - NodPod | Innovative Tactical Gear</title>
+    <meta name="description" content="Review and manage your NodPod cart. Innovative tactical gear for modern warriors.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="components/header/header.css">
+    <link rel="stylesheet" href="components/footer/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="logo">
+            <a href="index.html">[<span class="white">nod</span><span class="red">pod.us]</span></a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="account.html">My account</a>
+            <a href="dealers.html">Authorized dealers</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="hamburger-menu">☰</div>
+    </header>
+
+    <main>
+        <div class="cart-container">
+            <h1>Your Cart</h1>
+            <div id="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+            <div class="cart-actions">
+                <input type="text" id="coupon-code" placeholder="Enter coupon code">
+                <button id="apply-coupon">Apply Coupon</button>
+            </div>
+            <div id="cart-summary">
+                <div id="cart-totals">
+                    <p>Subtotal: <span id="subtotal">$0.00</span></p>
+                    <p>Shipping: <span id="shipping">$0.00</span></p>
+                    <p>Tax: <span id="tax">$0.00</span></p>
+                    <p class="total">Total: <span id="total">$0.00</span></p>
+                </div>
+                <button id="checkout-button">Proceed to Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="newsletter-signup">
+            <label for="email-input">Enter your email</label>
+            <div class="input-group">
+                <input type="email" id="email-input" placeholder="Enter your email" required>
+                <button type="submit">Stay Updated</button>
+            </div>
+        </div>
+        <nav aria-label="Footer Navigation">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </nav>
+        <p>&copy; 2024 NodPod. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/cart.js"></script>
+</body>
+</html>

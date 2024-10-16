@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - NodPod | Innovative Tactical Gear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo">
+            <a href="index.html">[<span class="white">nod</span><span class="red">pod.us]</span></a>
+        </div>
+        <nav>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="account.html">My account</a>
+            <a href="dealers.html">Authorized dealers</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="hamburger-menu">☰</div>
+    </header>
+
+    <main class="checkout-container">
+        <h1>Checkout</h1>
+        <div class="coupon-section">
+            <p>Have a coupon? <a href="#" id="show-coupon">Click here to enter your code</a></p>
+            <div id="coupon-form" style="display: none;">
+                <input type="text" id="coupon-code" placeholder="Enter coupon code">
+                <button id="apply-coupon">Apply Coupon</button>
+            </div>
+        </div>
+        <div class="checkout-content">
+            <form class="checkout-form">
+                <div class="billing-details">
+                    <h2>Billing details</h2>
+                    <div class="form-group">
+                        <label for="first-name">First name *</label>
+                        <input type="text" id="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last name *</label>
+                        <input type="text" id="last-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company-name">Company name (optional)</label>
+                        <input type="text" id="company-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country / Region *</label>
+                        <select id="country" required>
+                            <option value="US">United States (US)</option>
+                            <!-- Add more country options -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="street-address">Street address *</label>
+                        <input type="text" id="street-address" placeholder="House number and street name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="apartment" placeholder="Apartment, suite, unit, etc. (optional)">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Town / City *</label>
+                        <input type="text" id="city" required>
+                    </div> 
+                    <div class="form-group">
+                        <label for="state">State *</label>
+                        <select id="state" required>
+                            <option value="TX">Texas</option>
+                            <!-- Add more state options -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="zip">ZIP Code *</label>
+                        <input type="text" id="zip" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address *</label>
+                        <input type="email" id="email" required>
+                    </div>
+                </div>
+                <div class="shipping-details">
+                    <div class="form-group full-width">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="ship-different" name="ship-different">
+                            <label for="ship-different">Ship to a different address?</label>
+                        </div>
+                    </div>
+                    <div id="shipping-form" style="display: none;">
+                        <!-- Add shipping form fields similar to billing details -->
+                    </div>
+                </div>
+                <div class="order-notes">
+                    <div class="form-group full-width">
+                        <label for="order-notes">Order notes (optional)</label>
+                        <textarea id="order-notes" name="order-notes" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                    </div>
+                </div>
+            </form>
+            <div class="order-summary">
+                <h2>Your order</h2>
+                <table id="order-items">
+                    <!-- Order items will be populated dynamically -->
+                </table>
+                <div id="order-totals">
+                    <!-- Order totals will be populated dynamically -->
+                </div>
+                <div class="payment-methods">
+                    <h3>Payment method</h3>
+                    <div class="payment-options">
+                        <button class="payment-option" data-payment="credit-card">
+                            <i class="fas fa-credit-card"></i> Credit Card
+                        </button>
+                        <button class="payment-option" data-payment="paypal">
+                            <i class="fab fa-paypal"></i> PayPal
+                        </button>
+                        <button class="payment-option" data-payment="apple-pay">
+                            <i class="fab fa-apple-pay"></i> Apple Pay
+                        </button>
+                        <button class="payment-option" data-payment="google-pay">
+                            <i class="fab fa-google-pay"></i> Google Pay
+                        </button>
+                    </div>
+                </div>
+                <button id="place-order" class="place-order-btn">Place order</button>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        <!-- Include your footer content here -->
+    </footer>
+
+    <script src="assets/js/checkout.js"></script>
+</body>
+</html>
